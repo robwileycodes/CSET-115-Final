@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    </style>
+</head>
+<body id="body">
+    <header>
+        <h1 onclick="lightToDark()" id="moon">&#x2600;</h1>
+        <h1 onclick="darkToLight()" id="sun"><i class="fa fa-moon-o"></i></h1>
+        <h1>Tic Tac Toe</h1>
+    </header>
+
+    <main>
+        <h3>Games Played: <strong id="gamesPlayed">0</strong></h3>
+        <div class="score-grid">
+            <div id="scoreBtn1">
+                <h2>Player 1 (X):</h2>
+                <h2 id="score1">0</h2>
+            </div>
+            <div id="scoreBtn2">
+                <h2>Ties:</h2>
+                <h2 id="ties">0</h2>
+            </div>
+            <div id="scoreBtn3">
+                <h2>Player 2 (O):</h2>
+                <h2 id="score2">0</h2>
+            </div>
+        </div>
+        <div>
+            <h2 id="p1Win">Player 1 Wins!</h2>
+            <h2 id="p2Win">Player 2 Wins!</h2>
+            <h2 id="tie">It's A Tie!</h2>
+        </div>
+        <div class="board" id="board">
+            <button class="cell" id="cell1"></button>
+            <button class="cell" id="cell2"></button>
+            <button class="cell" id="cell3"></button>
+            <button class="cell" id="cell4"></button>
+            <button class="cell" id="cell5"></button>
+            <button class="cell" id="cell6"></button>
+            <button class="cell" id="cell7"></button>
+            <button class="cell" id="cell8"></button>
+            <button class="cell" id="cell9"></button>
+        </div>
+    </main>
+
+        <button id="restart">Restart Game</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
